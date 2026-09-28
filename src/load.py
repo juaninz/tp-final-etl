@@ -82,7 +82,7 @@ def chequear_rangos(filas):
     maximo = config.VALOR_MAXIMO_RAZONABLE
     fuera_de_rango = [
         f for f in filas 
-        if f["valor"] < 0 or f["valor"] > maximo
+        if f["valor_musd"] < 0 or f["valor_musd"] > maximo
     ]
     
     ok = len(fuera_de_rango) == 0
